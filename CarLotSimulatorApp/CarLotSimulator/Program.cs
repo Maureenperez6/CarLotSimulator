@@ -7,8 +7,8 @@ namespace CarLotSimulator
         static void Main(string[] args)
         {
             var carLot = new CarLot(); // for BONUZ X 2 only needed for BOUNS X 2 !!! --> Instantiating a new object of type CarLot
-
             
+
             //TODO
 
             //Create a seperate class file called Car
@@ -35,6 +35,9 @@ namespace CarLotSimulator
             toyota.IsDrivable = true;
 
             carLot.ParkingLot.Add(toyota); // for ***BONUS X 2*** only needed for BONUS X 2 !!!
+            
+            
+            Console.WriteLine($"Number of cars in CarLot: {CarLot.numberOfCars}");
 
             //**Object Initialize Syntax**
             var honda = new Car()
@@ -48,13 +51,17 @@ namespace CarLotSimulator
 
             };
             carLot.ParkingLot.Add(honda); // for ***BONUS X 2*** only needed for BONUS X 2 !!!
+            
+            Console.WriteLine($"Number of cars in CarLot: {CarLot.numberOfCars}");
 
             //**Custom Constructor**
             var infiniti = new Car(2014, "Infiniti", "Q50", "Vroom!", "BEEEP!", true);
 
             carLot.ParkingLot.Add(infiniti); // for *** BONUS X 2*** only needed for BONUS X 2 !!!
+            
+            Console.WriteLine($"Number of cars in CarLot: {CarLot.numberOfCars}");
 
-           
+
             Console.WriteLine("Toyota");
             toyota.MakeEngineNoise(toyota.EngineNoise);
             toyota.MakeHonkeNoise(toyota.HonkNoise);

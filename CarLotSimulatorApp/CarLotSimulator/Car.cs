@@ -8,7 +8,7 @@ namespace CarLotSimulator
     {
         public Car()    // Constructor
         {
-
+            CarLot.numberOfCars++;
         }
         // Methood Overloading- Custom Constructor
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDrivable)

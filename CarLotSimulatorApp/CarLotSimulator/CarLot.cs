@@ -12,7 +12,10 @@ namespace CarLotSimulator
 
         }
         public List<Car> ParkingLot { get; set; } = new List<Car>(); // Made into a Property 
-        //List<Car> ParkingLot = new List<car>(); --> Standard way
+                                                                     //List<Car> ParkingLot = new List<car>(); --> Standard way
+
+        public static int numberOfCars;
+       
     }
 }
 
